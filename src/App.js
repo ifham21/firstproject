@@ -1,9 +1,11 @@
+import AddItem from './AddItem';
 import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
 import { useState } from 'react'
 
 function App() {
+
   const [items, setItems] = useState(
     [
       {
@@ -48,6 +50,7 @@ function App() {
     <div className="App">
       {/* Sending tite using props */}
         <Header title = "My Todo"/>
+        <AddItem />
         <Content 
           items = {items}
           handleCheck = {handleCheck}
