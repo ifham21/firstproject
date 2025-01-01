@@ -7,23 +7,9 @@ import { useState } from 'react'
 function App() {
 
   const [items, setItems] = useState(
-    [
-      {
-        id: 1,
-        checked: true,
-        item: "Daily Coding"
-      },
-      {
-        id: 2,
-        checked: false,
-        item: "Play Cricket"
-      },
-      {
-        id: 3,
-        checked: false,
-        item: "Read a Book"
-      }
-    ]
+    JSON.parse(
+      localStorage.getItem('todo_list')
+    )
   )
 
   // create a state for adding items
