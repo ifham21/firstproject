@@ -1,6 +1,6 @@
 import React from 'react'
 
-const searchItem = () => {
+const SearchItem = () => {
   return (
     <form className='searchForm' onSubmit={(e) => e.preventDefault}>
       <label htmlFor="search">Search</label>
@@ -15,4 +15,4 @@ const searchItem = () => {
   )
 }
 
-export default searchItem
+export default SearchItem

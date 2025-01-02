@@ -3,6 +3,7 @@ import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
 import { useState } from 'react'
+import SearchItem from './searchItem';
 
 function App() {
 
@@ -67,6 +68,7 @@ function App() {
           setNewItem = {setNewItem}
           handleSubmit = {handleSubmit}
         /> 
+        <SearchItem />
         <Content 
           items = {items}
           handleCheck = {handleCheck}
