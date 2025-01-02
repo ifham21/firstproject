@@ -16,6 +16,9 @@ function App() {
   // create a state for adding items
   const [newItem, setNewItem] = useState('')
 
+  // create a state for search the items
+  const [search, setSearch] = useState('')
+
   //adding the variable created via the state, to the items array
   const addItem = (item) => {
     const id = items.length ? items[items.length - 1].id + 1 : 1;
@@ -68,7 +71,10 @@ function App() {
           setNewItem = {setNewItem}
           handleSubmit = {handleSubmit}
         /> 
-        <SearchItem />
+        <SearchItem 
+          search = {search}
+          setSearch = {setSearch}
+        />
         <Content 
           items = {items}
           handleCheck = {handleCheck}
